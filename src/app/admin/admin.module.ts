@@ -6,6 +6,7 @@ import { BotListComponent } from './components/bot/bot-list/bot-list.component';
 import { BotAddEditComponent } from './components/bot/bot-add-edit/bot-add-edit.component';
 import { FaqListComponent } from './components/faq/faq-list/faq-list.component';
 import { FaqAddEditComponent } from './components/faq/faq-add-edit/faq-add-edit.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FaqAddEditComponent } from './components/faq/faq-add-edit/faq-add-edit.
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    SharedModule
   ]
 })
 export class AdminModule { }
