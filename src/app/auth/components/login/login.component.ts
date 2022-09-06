@@ -33,11 +33,11 @@ export class LoginComponent implements OnInit {
   
   this.authService.login(body).subscribe({next:(response)=>{
    console.log(response)
-    this.router.navigateByUrl("admin")
+    this.router.navigateByUrl("/admin/bot")
     
   },
   error:(error)=>{
-    console.log(error);
+    console.log(error); 
   }
   
 });
